@@ -1,0 +1,65 @@
+{
+  "name": "cli-mid-version",
+  "version": "1.0.0",
+  "description": "Version option middleware",
+  "author": "muji <noop@xpm.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freeformsystems/cli-mid-version"
+  },
+  "bugs": {
+    "url": "https://github.com/freeformsystems/cli-mid-version/issues",
+    "email": "muji <noop@xpm.io>"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/freeformsystems/cli-mid-version/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "middleware",
+    "command",
+    "action"
+  ],
+  "dependencies": {
+    "cli-define": "^0.5.44",
+    "cli-util": "^1.1.24"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.2",
+    "mocha": "^1.21.4"
+  },
+  "engine": [
+    "node >= 0.10.21"
+  ],
+  "scripts": {
+    "readme": "mdp --force -v",
+    "test": "istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/spec"
+  },
+  "mdp": {
+    "title": "Version Middleware",
+    "pedantic": true,
+    "include": "doc/readme",
+    "require": "lib",
+    "links": "links.md",
+    "toc": "Table of Contents",
+    "base": "https://github.com/freeformsystems/cli-mid-version",
+    "partial": [
+      {
+        "inc": [
+          "introduction.md",
+          "install.md",
+          "test.md"
+        ]
+      },
+      {
+        "inc": [
+          "license.md"
+        ]
+      }
+    ]
+  }
+}
