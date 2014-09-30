@@ -1,6 +1,6 @@
 {
   "name": "cli-mid-version",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Version option middleware",
   "author": "muji <noop@xpm.io>",
   "repository": {
