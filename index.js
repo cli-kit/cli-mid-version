@@ -1,7 +1,5 @@
-var util = require('util');
-var cli = require('cli-define');
-var Flag = cli.Flag;
-var wrap = require('cli-util').wrap;
+var util = require('util')
+  , wrap = require('cli-util').wrap;
 
 /**
  *  Default program version action.
@@ -52,7 +50,7 @@ module.exports = function(semver, name, description, action) {
   action = action || handler;
   if(semver) this._version = semver;
   name = name || '--version';
-  var flag = new Flag(
+  var flag = this.createFlag(
     name,
     description || 'output version information and exit', {action: action});
   flag.key('versionopt');
